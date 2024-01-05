@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --bg-color:#f1ebe3;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: var(--bg-color);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    position: relative;
+}
+.nav-links ul{
+    display:flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.nav-links li{
+    list-style: none;  
+}
+.nav-links a,.sign-in-info a:first-child,.main-text,.companies-title,.rating-title{
+    color: #969491;
+}
+.products-dropdown {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+	left: 30rem;
+	right: 1rem;
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+.spence-header,.fiber-header,.gradie-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:5px;
+    margin: 5px;
+}
+.btn-join{
+    padding: 20px;
+    width: 130px;
+    background-color: #133416;
+    border-radius: 5px;
+    font-size: 12pt;
+    font-weight: 600;
+    color: #fff;
+}
+.main-part {
+    margin-top: 10px;
+}
+.header-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 10px;
+}
+.header-text-part {
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+    gap: 20px;
+}
+.hero-img {
+    width: 400px;
+}
+.main-title {
+    font-size: 60pt;
+}
+.main-title .special{
+    color: #f7b300;
+}
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.companies-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.companies {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width:991px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+    }
+    .nav-links .menu-items,.sign-in-info{
+        display: none;
+    }
+    .nav-links.active .menu-items,
+    .sign-in-info.active {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        top: 50px; 
+        right: 10px;
+        left: 20px; 
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(0);
+    }
+    .images-main {
+        display: none;
+    }
+    .header-text-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-text-part .main-title{
+        font-size: 38pt;
+    }
+    .header-text-part .main-text{
+        width: 80%;
+    }
+    .companies-section {
+        display: flex;
+		flex-wrap: wrap;
+    }
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+    }
+    .products-dropdown {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 180px;
+        left: 50px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+    }
+}
+@media screen and (max-width:600px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+    }
+    .nav-links .menu-items,.sign-in-info{
+        display: none;
+    }
+    .nav-links.active .menu-items,
+    .sign-in-info.active {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        top: 50px; 
+        right: 10px;
+        left: 20px; 
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(0);
+    }
+    .images-main {
+        display: none;
+    }
+    .header-text-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-text-part .main-title{
+        font-size: 38pt;
+    }
+    .header-text-part .main-text{
+        width: 80%;
+    }
+    .companies-section {
+        display: flex;
+		flex-wrap: wrap;
+    }
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+    }
+    .products-dropdown {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 180px;
+        left: 50px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+    }
+}
