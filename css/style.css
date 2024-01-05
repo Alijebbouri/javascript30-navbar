@@ -183,8 +183,7 @@ body{
         position: absolute;
         background-color: #fff;
         top: 50px; 
-        right: 20px;
-        left: 20px; 
+        right: 60px;
         display: flex;
         padding: 10px;
         flex-direction: column;
@@ -207,7 +206,7 @@ body{
     }
     .companies-section {
         display: flex;
-		width: 70%;
+		width: 90%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -216,16 +215,19 @@ body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap:30px;
-        width: 50%;
+        width: 70%;
     }
     .products-dropdown {
         display: none;
         position: absolute;
-        top: 60px;
-        right: 150px;
-        left: 30px;
         background-color: #ffffff;
         border-radius: 20px;
-        padding: 30px;
+        top: 80px;
+        right: 100px;
+        left: 0;
+        width: 100%;
+   }
+    .img-comp{
+        width: 70%;
     }
 }
